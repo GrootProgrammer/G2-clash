@@ -166,6 +166,9 @@ data Primitive = -- Mathematical and logical operators
                | And
                | Or
                | Not
+               | ShiftL
+               | ShiftRA
+               | ShiftRL
                | Implies
                | Iff
                | Plus
