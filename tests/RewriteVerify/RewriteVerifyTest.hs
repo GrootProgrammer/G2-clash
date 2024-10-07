@@ -209,6 +209,10 @@ typeSymsTestsGood =
 instTypeRed :: TestTree
 instTypeRed =
   rvTest acceptRule "tests/RewriteVerify/Correct/TestZeno.hs" ["p12"]
+  
+bitsLogicGood :: TestTree
+bitsLogicGood =
+  rvTest acceptRule "tests/RewriteVerify/Correct/BitsLogic.hs" ["morgans law or", "morgans law and"]
 
 multiLemmaTestsGood :: TestTree
 multiLemmaTestsGood =
@@ -227,6 +231,7 @@ rewriteTests = testGroup "Rewrite Tests"
         , typeSymsTestsGood
         , instTypeRed
         , multiLemmaTestsGood
+        , bitsLogicGood
         ]
 
 
