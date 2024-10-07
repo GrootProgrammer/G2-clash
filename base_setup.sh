@@ -14,5 +14,5 @@ get_base() {
 	git checkout $3 &> /dev/null
 }
 
-get_base "https://github.com/BillHallahan/base-4.9.1.0.git" ~/.g2/base-4.9.1.0/ $base_commit
+get_base "https://github.com/GrootProgrammer/base-4.9.1.0.git" ~/.g2/base-4.9.1.0/ $base_commit
 get_base "https://github.com/BillHallahan/G2Stubs.git" ~/.g2/G2Stubs/ $stubs_commit
