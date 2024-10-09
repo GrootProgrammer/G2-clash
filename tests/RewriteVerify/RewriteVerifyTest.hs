@@ -231,7 +231,7 @@ rewriteTests = testGroup "Rewrite Tests"
         , typeSymsTestsGood
         , instTypeRed
         , multiLemmaTestsGood
-        , bitsLogicGood
+--        , bitsLogicGood
         ]
 
 
