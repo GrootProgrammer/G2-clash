@@ -375,8 +375,6 @@ mkPrimHaskell pg = pr
         pr Negate = "-"
         pr Abs = "abs"
 
-        pr PlusBounded = "+"
-
         pr Sqrt = "sqrt"
 
         pr FpNeg = "fp.-"

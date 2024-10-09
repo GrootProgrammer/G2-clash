@@ -166,9 +166,6 @@ data Primitive = -- Mathematical and logical operators
                | And
                | Or
                | Not
-               | ShiftL
-               | ShiftRA
-               | ShiftRL
                | Implies
                | Iff
                | Plus
@@ -308,6 +305,7 @@ instance Hashable Coercion
 -- | Types information.
 data Type = TyVar Id -- ^ Polymorphic type variable.
           | TyLitInt -- ^ Unwrapped primitive Int type.
+          | TyLitIntBounded Integer
           | TyLitFloat -- ^ Unwrapped primitive Float type.
           | TyLitDouble -- ^ Unwrapped primitive Int type.
           | TyLitRational -- ^ Unwrapped primitive Rational type.
