@@ -78,7 +78,7 @@ import qualified Data.HashMap.Lazy as HM
 import qualified Data.Map as M
 import Data.Maybe
 import qualified Data.List as L
-import Control.Monad
+import Control.Monad()
 
 tyInt :: KV.KnownValues -> Type
 tyInt kv = TyCon (KV.tyInt kv) (tyTYPE kv)

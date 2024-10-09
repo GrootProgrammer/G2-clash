@@ -31,7 +31,7 @@ module G2.Lib.Printers ( PrettyGuide
 
 import G2.Language.Expr
 import qualified G2.Language.ExprEnv as E
-import G2.Language.KnownValues
+import G2.Language.KnownValues()
 import G2.Language.MutVarEnv
 import G2.Language.Naming
 import qualified G2.Language.PathConds as PC
@@ -374,6 +374,8 @@ mkPrimHaskell pg = pr
         pr Rem = "rem"
         pr Negate = "-"
         pr Abs = "abs"
+
+        pr PlusBounded = "+"
 
         pr Sqrt = "sqrt"
 
