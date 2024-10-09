@@ -305,7 +305,7 @@ instance Hashable Coercion
 -- | Types information.
 data Type = TyVar Id -- ^ Polymorphic type variable.
           | TyLitInt -- ^ Unwrapped primitive Int type.
-          | TyLitIntBounded Integer
+          | TyLitIntBounded Integer -- ^ Primitive Integer with a certain bitsize
           | TyLitFloat -- ^ Unwrapped primitive Float type.
           | TyLitDouble -- ^ Unwrapped primitive Int type.
           | TyLitRational -- ^ Unwrapped primitive Rational type.
