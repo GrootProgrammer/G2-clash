@@ -83,7 +83,7 @@ caseOfKnownCons (Case e i _ as)
     
     | Data _:_ <- unApp e
     , Just (Alt Default ae) <- find (\(Alt am _) -> am == Default) as = replaceVar (idName i) e ae
-    | Lit l:_ <- unApp e
+    | Lit _:_ <- unApp e
     , Just (Alt Default ae) <- find (\(Alt am _) -> am == Default) as = replaceVar (idName i) e ae
 
 caseOfKnownCons e = modifyChildren caseOfKnownCons e

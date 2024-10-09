@@ -71,6 +71,8 @@ primDefs' b c l =
               , ("modInt#", Prim Mod tyIntIntInt)
               , ("quotInt#", Prim Quot tyIntIntInt)
               , ("remInt#", Prim Rem tyIntIntInt)
+              , ("andI#", Prim And tyIntIntInt)
+              , ("orI#", Prim Or tyIntIntInt)
 
               , ("$==##", Prim FpEq $ tyDoubleDoubleBool b)
               , ("$/=##", Prim FpNeq $ tyDoubleDoubleBool b)
